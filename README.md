@@ -1,7 +1,7 @@
 # dashboarder
 
-A super-simple app designed to make getting dashboard screes working a bit
-easier.
+A super-simple app designed to make getting dashboard screens working a bit
+easier and more flexible.
 
 ## Overview
 
