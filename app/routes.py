@@ -45,7 +45,7 @@ def get_dashboard_url():
                   timeout=config["ttl"])
         dashboard_url = cache.get("dashboard_url")
 
-        if config["sort"] == "random":
+        if config["rotation"] == "random":
             next_url = random.choice(dashboards["urls"])
             while next_dashboard_url == next_url:
                 next_url = random.choice(dashboards["urls"])
