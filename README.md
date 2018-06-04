@@ -1,6 +1,26 @@
 # dashboarder
-A really simple dashboard rotator helper web app.
 
+A super-simple app designed to make getting dashboard screes working a bit
+easier.
+
+## Overview
+
+Usually, when we want to get dashboard screens up and running we have either
+some client side scripts or plugins to rotate through tabs or load up different
+browser windows.
+
+If we want to add / remove urls we usually have to interact on the display /
+client side. This is fine with a single screen but what if you have multiple
+dashboard screens in different locations? It becomes an annoyance.
+
+`dashboarder` is a flask app that reads in a list of urls (currently from a YAML
+file) and returns a `302` redirect with a Location header to a url from your
+configuration. This means you can setup Chrome plugin like the
+[Rotisserie URL Rotator plugin](https://chrome.google.com/webstore/detail/rotisserie-url-rotator/iljemanjjfjlglhkmojkmfbpphiaheja?hl=en)
+to point at a single URL (dashboarder) and refresh periodically to change what
+is displayed.
+
+Currently, there's two rotation options:
 
 Round-robin ordering (default):
 ```
@@ -37,3 +57,9 @@ Location: https://logs.infraprd.talpay.itvcloud.zone/goto/9ab9d95645762c526a1065
 Mon Jun  4 11:51:43 BST 2018
 Location: https://dashboard.infradev.talpay.itvcloud.zone/talpay
 ```
+
+# Running
+
+# Developing
+
+# Future Features
